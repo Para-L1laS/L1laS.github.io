@@ -4,7 +4,7 @@
 
   在每天训练到半夜的人工智能大作业结束后，忽然感觉没什么事做，于是就想着在gayhub上建一个个人博客。整个过程也是不怎么容易（本人忙着参加一战，没时间（）：简单的在[廖雪峰]()老师的网站上学了点git入门，之后在网上找了个Jekyll模板，使用github pages搭建了本站。
 
-![芝士雪豹](E:\Typora\resources\assets\images\bf1-model1.png"嘿嘿嘿.....我的三星自动装填步枪...嘿嘿嘿嘿")
+![芝士雪豹](blog_img/bf1-model1.png"嘿嘿嘿.....我的三星自动装填步枪...嘿嘿嘿嘿")
 
 ## 准备工作
 
@@ -34,7 +34,7 @@
 
 ## 本地库管理
 
-  创建一个文件夹用于容纳模板，右键选择**Git Bash Here**，输入指令 <font color=red>**git init**</font> 创建本地库（由于窗户系统的奇奇怪怪的讲究，文件路径最好不要有中文）。之后把找到的模板文件复制到文件夹下，使用以下指令把文件添加到库：
+  创建一个文件夹用于容纳模板，右键选择**Git Bash Here**，输入指令 **<font color=red>git init</font> **创建本地库（由于窗户系统的奇奇怪怪的讲究，文件路径最好不要有中文）。之后把找到的模板文件复制到文件夹下，使用以下指令把文件添加到库：
 
 > git add *  “把所有文件添加到暂存区，星号是通配符啦”
 >
@@ -42,9 +42,9 @@
 >
 > git commit -m 'message' “把暂存区的文件添加到库，引号内的东西可以理解为’版本更新说明‘”
 
- 在端口4000没有被占用的前提下可以在本地预览效果。首先执行指令 <font color=red>**bundle install**</font>引入引入Bundle来管理项目中的所有Gem依赖。若出现版本兼容问题（<font color=red>can't find gem bundler (>= 0.a)</font>），可以打开下载模板的<font color=blue>**Gemfile.lock**</font>文件，用记事本打开，拉到最后，找到字段<font color=red>**BUNDLED WITH**</font>，把版本改成自己的bundle版本即可。（cmd中输入<font color=red>**bundle -v**</font>即可查看自己安装的版本）
+ 在端口4000没有被占用的前提下可以在本地预览效果。首先执行指令 **<font color=red>bundle install</font>**引入引入Bundle来管理项目中的所有Gem依赖。若出现版本兼容问题（<font color=red>can't find gem bundler (>= 0.a)</font>），可以打开下载模板的**<font color=blue>Gemfile.lock</font>**文件，用记事本打开，拉到最后，找到字段**<font color=red>BUNDLED WITH</font>**，把版本改成自己的bundle版本即可。（cmd中输入**<font color=red>bundle -v</font>**即可查看自己安装的版本）
 
- 之后在git bash窗口输入<font color=red>**bundle exec jekyll serve**</font>，浏览器访问链接http://127.0.0.1:4000即可。
+ 之后在git bash窗口输入**<font color=red>bundle exec jekyll serve</font>**，浏览器访问链接http://127.0.0.1:4000即可。
 
 ## 链接远程库以及推送
 
